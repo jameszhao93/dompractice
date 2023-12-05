@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<button onclick="myFunction()">点我</button>
+
+
+
+<script>
+
+const tryArray = [
+    {name: "james", age: 32, location:"a"},
+    {name: "kim", age: 14, location:"C"},
+    {name: "Dave", age: 10, location:"P"},
+    {name: "Mark", age: 45, location:"M"}
+]
+
+function myFunction() {
+
+    console.log(tryArray)
+
+    const newArray = tryArray.map(item=>{
+        return {...item, age: item.age+5}
+    })
+    console.log(newArray)
+}
+</script>
+
+</body>
+</html>
